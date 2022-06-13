@@ -13,6 +13,5 @@ RUN pip install requests \
 EXPOSE 8888
 
 COPY ./wikiscraper.ipynb /scraper
-COPY ./to_db.ipynb /scraper
 
 CMD ["jupyter-lab", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
